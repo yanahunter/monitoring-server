@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Computers</title>
+</head>
+<body>
+<header>
+    <h1>Histograms by reports</h1>
+</header>
+<section>
+    <h2>CPU percent</h2>
+    <img src="data:image/png;base64,{{ cpu_percent_hist }}" alt="CPU percent histogram">
+</section>
+
+<section>
+    <h2>Free RAM</h2>
+    <img src="data:image/png;base64,{{ free_ram_hist }}" alt="Free RAM histogram">
+</section>
+
+<section>
+    <h2>Free disk space</h2>
+    <img src="data:image/png;base64,{{ free_disk_space_hist }}" alt="Free disk space histogram">
+</section>
+
+<section>
+    <h2>Processes count</h2>
+    <img src="data:image/png;base64,{{ processes_count_hist }}" alt="Processes count histogram">
+</section>
+</body>
+</html>

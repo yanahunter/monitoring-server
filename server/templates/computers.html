@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Computers</title>
+</head>
+<body>
+<header>
+    <h1>Histograms by reports</h1>
+    <nav>
+        {% for computer in computers %}
+            <a href="{{ computer.computer_id }}/">{{ computer.computer_id }}</a>
+            <br>
+        {% endfor %}
+    </nav>
+</header>
+</body>
+</html>
